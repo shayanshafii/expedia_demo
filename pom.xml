@@ -39,6 +39,13 @@
             <version>10.0.0</version>
         </dependency>
 
+        <!-- Gson (required by Amadeus SDK) -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.10.1</version>
+        </dependency>
+
         <!-- Spring Boot Test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
