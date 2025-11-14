@@ -18,22 +18,18 @@ public class Booking {
     @JsonProperty("status")
     private String status;
 
-    @JsonProperty("amount")
-    private String amount;
-
     @JsonProperty("created_at")
     private String createdAt;
 
     public Booking() {
     }
 
-    public Booking(String userId, String flightId, String passengerName, String passengerEmail, String status, String amount, String createdAt) {
+    public Booking(String userId, String flightId, String passengerName, String passengerEmail, String status, String createdAt) {
         this.userId = userId;
         this.flightId = flightId;
         this.passengerName = passengerName;
         this.passengerEmail = passengerEmail;
         this.status = status;
-        this.amount = amount;
         this.createdAt = createdAt;
     }
 
@@ -75,14 +71,6 @@ public class Booking {
 
     public void setStatus(String status) {
         this.status = status;
-    }
-
-    public String getAmount() {
-        return amount;
-    }
-
-    public void setAmount(String amount) {
-        this.amount = amount;
     }
 
     public String getCreatedAt() {

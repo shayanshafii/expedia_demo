@@ -1,50 +1,80 @@
 package com.expedia.demo.service;
 
-import com.amadeus.Amadeus;
-import com.amadeus.Params;
-import com.amadeus.exceptions.ResponseException;
-import com.amadeus.resources.FlightOfferSearch;
+import com.expedia.demo.model.AviationstackRouteResponse;
 import com.expedia.demo.model.Flight;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class SearchService {
-    private final Amadeus amadeus;
+    private final RestTemplate restTemplate;
+    private final String apiKey;
+    private final String apiUrl;
 
     @Autowired
-    public SearchService(Amadeus amadeus) {
-        this.amadeus = amadeus;
+    public SearchService(RestTemplate restTemplate,
+                         @Value("${aviationstack.api.key}") String apiKey,
+                         @Value("${aviationstack.api.url}") String apiUrl) {
+        this.restTemplate = restTemplate;
+        this.apiKey = apiKey;
+        this.apiUrl = apiUrl;
     }
 
-    public List<Flight> searchFlights(String origin, String destination, String date) throws ResponseException {
-        FlightOfferSearch[] offers = amadeus.shopping.flightOffersSearch.get(
-                Params.with("originLocationCode", origin)
-                        .and("destinationLocationCode", destination)
-                        .and("departureDate", date)
-                        .and("adults", 1)
-        );
+    public List<Flight> searchFlights(String origin, String destination, String date) {
+        String url = String.format("%s/routes?access_key=%s&dep_iata=%s&arr_iata=%s",
+                apiUrl, apiKey, origin, destination);
 
-        List<Flight> flights = new ArrayList<>();
-        if (offers != null) {
-            for (FlightOfferSearch offer : offers) {
-                String flightId = offer.getId();
-                String price = offer.getPrice().getTotal();
-                String airline = offer.getValidatingAirlineCodes() != null && offer.getValidatingAirlineCodes().length > 0
-                        ? offer.getValidatingAirlineCodes()[0] : "Unknown";
+        try {
+            AviationstackRouteResponse response = restTemplate.getForObject(url, AviationstackRouteResponse.class);
+            List<Flight> flights = new ArrayList<>();
 
-                String originCode = offer.getItineraries()[0].getSegments()[0].getDeparture().getIataCode();
-                String destCode = offer.getItineraries()[0].getSegments()[offer.getItineraries()[0].getSegments().length - 1].getArrival().getIataCode();
-                String depDate = offer.getItineraries()[0].getSegments()[0].getDeparture().getAt();
+            if (response != null && response.getData() != null) {
+                for (AviationstackRouteResponse.Route route : response.getData()) {
+                    String depIata = route.getDeparture() != null ? route.getDeparture().getIata() : origin;
+                    String arrIata = route.getArrival() != null ? route.getArrival().getIata() : destination;
+                    String airlineName = route.getAirline() != null && route.getAirline().getName() != null
+                            ? route.getAirline().getName() : "Unknown";
+                    String airlineIata = route.getAirline() != null && route.getAirline().getIata() != null
+                            ? route.getAirline().getIata() : "";
 
-                Flight flight = new Flight(flightId, originCode, destCode, depDate, price, airline);
-                flights.add(flight);
+                    // Generate flight_id from route data
+                    String flightId = generateFlightId(depIata, arrIata, airlineIata);
+
+                    Flight flight = new Flight(flightId, depIata, arrIata, date, airlineName);
+                    flights.add(flight);
+                }
             }
+
+            return flights;
+        } catch (Exception e) {
+            return new ArrayList<>();
         }
-        return flights;
+    }
+
+    private String generateFlightId(String origin, String destination, String airline) {
+        try {
+            String input = origin + destination + airline;
+            MessageDigest digest = MessageDigest.getInstance("SHA-256");
+            byte[] hash = digest.digest(input.getBytes(StandardCharsets.UTF_8));
+            StringBuilder hexString = new StringBuilder();
+            for (byte b : hash) {
+                String hex = Integer.toHexString(0xff & b);
+                if (hex.length() == 1) {
+                    hexString.append('0');
+                }
+                hexString.append(hex);
+            }
+            return hexString.toString().substring(0, 16);
+        } catch (NoSuchAlgorithmException e) {
+            return String.valueOf((origin + destination + airline).hashCode());
+        }
     }
 }
-

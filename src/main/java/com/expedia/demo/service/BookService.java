@@ -27,7 +27,6 @@ public class BookService {
         String userId = generateUserId(request.getPassengerName(), request.getPassengerEmail());
         String flightId = request.getFlightId();
         String status = "PENDING";
-        String amount = "0.00";
         String createdAt = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
 
         Optional<Booking> existingBooking = bookingStorage.findBooking(userId, flightId);
@@ -36,7 +35,7 @@ public class BookService {
             return new BookResponse(booking.getUserId(), booking.getFlightId(), booking.getStatus(), "completed!");
         }
 
-        Booking booking = new Booking(userId, flightId, request.getPassengerName(), request.getPassengerEmail(), status, amount, createdAt);
+        Booking booking = new Booking(userId, flightId, request.getPassengerName(), request.getPassengerEmail(), status, createdAt);
         bookingStorage.saveBooking(booking);
 
         return new BookResponse(userId, flightId, status, "completed!");

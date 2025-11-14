@@ -37,13 +37,12 @@ public class PayServiceTest {
         booking.setUserId(userId);
         booking.setFlightId(flightId);
         booking.setStatus("PENDING");
-        booking.setAmount("500.00");
 
         PaymentRequest request = new PaymentRequest();
         request.setUserId(userId);
         request.setFlightId(flightId);
         request.setPaymentMethod("credit_card");
-        request.setAmount("500.00");
+        request.setAmount("");
 
         when(bookingStorage.findBooking(userId, flightId)).thenReturn(Optional.of(booking));
 

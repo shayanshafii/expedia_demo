@@ -32,12 +32,6 @@ public class PayService {
             return null;
         }
 
-        String requestedAmount = request.getAmount();
-        String bookingAmount = booking.getAmount();
-        if (!requestedAmount.equals(bookingAmount)) {
-            return null;
-        }
-
         booking.setStatus("CONFIRMED");
         bookingStorage.updateBooking(booking);
 

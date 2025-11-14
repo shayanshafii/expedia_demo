@@ -1,6 +1,5 @@
 package com.expedia.demo.controller;
 
-import com.amadeus.exceptions.ResponseException;
 import com.expedia.demo.model.Flight;
 import com.expedia.demo.service.SearchService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,12 +26,8 @@ public class SearchController {
             @RequestParam String origin,
             @RequestParam String destination,
             @RequestParam String date) {
-        try {
-            List<Flight> flights = searchService.searchFlights(origin, destination, date);
-            return ResponseEntity.ok(flights);
-        } catch (ResponseException e) {
-            return ResponseEntity.status(500).build();
-        }
+        List<Flight> flights = searchService.searchFlights(origin, destination, date);
+        return ResponseEntity.ok(flights);
     }
 }
 
