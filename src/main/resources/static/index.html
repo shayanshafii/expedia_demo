@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expedia Demo - Flight Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .flight-item {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+        .flight-details {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 4px;
+            display: none;
+        }
+        .message {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+    <h1>Expedia Demo - Flight Booking System</h1>
+
+    <!-- Search Section -->
+    <div class="section">
+        <h2>Search Flights</h2>
+        <form id="searchForm">
+            <input type="text" id="origin" placeholder="Origin (IATA code, e.g., NYC)" required>
+            <input type="text" id="destination" placeholder="Destination (IATA code, e.g., LAX)" required>
+            <input type="date" id="date" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <!-- Flight Results -->
+    <div class="section" id="resultsSection" style="display: none;">
+        <h2>Flight Results</h2>
+        <div id="flightResults"></div>
+    </div>
+
+    <!-- Booking Section -->
+    <div class="section" id="bookingSection" style="display: none;">
+        <h2>Book Flight</h2>
+        <form id="bookForm">
+            <input type="hidden" id="bookFlightId">
+            <input type="text" id="passengerName" placeholder="Passenger Name" required>
+            <input type="email" id="passengerEmail" placeholder="Passenger Email" required>
+            <button type="submit">Book Flight</button>
+        </form>
+        <div id="bookMessage"></div>
+    </div>
+
+    <!-- Payment Section -->
+    <div class="section" id="paymentSection" style="display: none;">
+        <h2>Pay for Booking</h2>
+        <form id="payForm">
+            <input type="text" id="userId" placeholder="User ID" required>
+            <input type="text" id="payFlightId" placeholder="Flight ID" required>
+            <input type="text" id="paymentMethod" placeholder="Payment Method (e.g., credit_card)" required>
+            <input type="text" id="amount" placeholder="Amount" required>
+            <button type="submit">Pay</button>
+        </form>
+        <div id="payMessage"></div>
+    </div>
+
+    <script>
+        let currentFlights = [];
+
+        // Search form handler
+        document.getElementById('searchForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const origin = document.getElementById('origin').value;
+            const destination = document.getElementById('destination').value;
+            const date = document.getElementById('date').value;
+
+            try {
+                const response = await fetch(`/api/search?origin=${origin}&destination=${destination}&date=${date}`);
+                const flights = await response.json();
+                currentFlights = flights;
+                displayFlights(flights);
+            } catch (error) {
+                showMessage('searchMessage', 'Error searching flights', 'error');
+            }
+        });
+
+        function displayFlights(flights) {
+            const resultsDiv = document.getElementById('flightResults');
+            resultsDiv.innerHTML = '';
+            
+            if (flights.length === 0) {
+                resultsDiv.innerHTML = '<p>No flights found.</p>';
+            } else {
+                flights.forEach(flight => {
+                    const flightDiv = document.createElement('div');
+                    flightDiv.className = 'flight-item';
+                    flightDiv.innerHTML = `
+                        <strong>${flight.origin} → ${flight.destination}</strong><br>
+                        Date: ${flight.departure_date}<br>
+                        Price: ${flight.price} ${flight.currency || 'USD'}<br>
+                        Airline: ${flight.airline}<br>
+                        <button onclick="viewDetails('${flight.flight_id}')">View Details</button>
+                        <button onclick="prepareBooking('${flight.flight_id}')">Book Flight</button>
+                        <div class="flight-details" id="details-${flight.flight_id}"></div>
+                    `;
+                    resultsDiv.appendChild(flightDiv);
+                });
+            }
+            document.getElementById('resultsSection').style.display = 'block';
+        }
+
+        async function viewDetails(flightId) {
+            const detailsDiv = document.getElementById(`details-${flightId}`);
+            if (detailsDiv.style.display === 'block') {
+                detailsDiv.style.display = 'none';
+                return;
+            }
+
+            try {
+                const response = await fetch(`/api/flight-details/${flightId}`);
+                const details = await response.json();
+                
+                detailsDiv.innerHTML = `
+                    <h3>Flight Details</h3>
+                    <p><strong>Price:</strong> ${details.price} ${details.currency || 'USD'}</p>
+                    <p><strong>Departure:</strong> ${details.departure_time || 'N/A'}</p>
+                    <p><strong>Arrival:</strong> ${details.arrival_time || 'N/A'}</p>
+                `;
+                detailsDiv.style.display = 'block';
+            } catch (error) {
+                detailsDiv.innerHTML = '<p class="error">Error loading details</p>';
+                detailsDiv.style.display = 'block';
+            }
+        }
+
+        function prepareBooking(flightId) {
+            document.getElementById('bookFlightId').value = flightId;
+            document.getElementById('bookingSection').style.display = 'block';
+            document.getElementById('bookingSection').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Booking form handler
+        document.getElementById('bookForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const flightId = document.getElementById('bookFlightId').value;
+            const passengerName = document.getElementById('passengerName').value;
+            const passengerEmail = document.getElementById('passengerEmail').value;
+
+            try {
+                const response = await fetch('/api/book', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        flight_id: flightId,
+                        passenger_name: passengerName,
+                        passenger_email: passengerEmail
+                    })
+                });
+                const result = await response.json();
+                showMessage('bookMessage', result.message || 'completed!', 'success');
+                document.getElementById('userId').value = result.user_id;
+                document.getElementById('payFlightId').value = result.flight_id;
+                document.getElementById('paymentSection').style.display = 'block';
+            } catch (error) {
+                showMessage('bookMessage', 'Error booking flight', 'error');
+            }
+        });
+
+        // Payment form handler
+        document.getElementById('payForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const userId = document.getElementById('userId').value;
+            const flightId = document.getElementById('payFlightId').value;
+            const paymentMethod = document.getElementById('paymentMethod').value;
+            const amount = document.getElementById('amount').value;
+
+            try {
+                const response = await fetch('/api/pay', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        user_id: userId,
+                        flight_id: flightId,
+                        payment_method: paymentMethod,
+                        amount: amount
+                    })
+                });
+                
+                if (response.ok) {
+                    const result = await response.json();
+                    showMessage('payMessage', result.message || 'completed!', 'success');
+                } else {
+                    showMessage('payMessage', 'Payment failed', 'error');
+                }
+            } catch (error) {
+                showMessage('payMessage', 'Error processing payment', 'error');
+            }
+        });
+
+        function showMessage(elementId, message, type) {
+            const messageDiv = document.getElementById(elementId);
+            messageDiv.className = `message ${type}`;
+            messageDiv.textContent = message;
+        }
+    </script>
+</body>
+</html>
+
