@@ -6,6 +6,7 @@ import com.expedia.demo.model.PaymentResponse;
 import com.expedia.demo.storage.BookingStorage;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
@@ -28,7 +29,6 @@ public class PayServiceTest {
 
     @Test
     void testProcessPayment_Success() {
-        // Setup
         String userId = "test-user-id";
         String flightId = "test-flight-id";
 
@@ -45,11 +45,85 @@ public class PayServiceTest {
 
         when(bookingStorage.findBooking(userId, flightId)).thenReturn(Optional.of(booking));
 
-        // Execute
         PaymentResponse response = payService.processPayment(request);
 
-        // Verify - minimal assertions
         assertNotNull(response);
+        assertEquals(userId, response.getUserId());
+        assertEquals(flightId, response.getFlightId());
+        assertEquals("CONFIRMED", response.getStatus());
+        assertEquals("completed!", response.getMessage());
+    }
+
+    @Test
+    void testProcessPayment_BookingNotFound_ReturnsNull() {
+        String userId = "test-user-id";
+        String flightId = "test-flight-id";
+
+        PaymentRequest request = new PaymentRequest();
+        request.setUserId(userId);
+        request.setFlightId(flightId);
+        request.setPaymentMethod("credit_card");
+        request.setAmount("100.00");
+
+        when(bookingStorage.findBooking(userId, flightId)).thenReturn(Optional.empty());
+
+        PaymentResponse response = payService.processPayment(request);
+
+        assertNull(response);
+        verify(bookingStorage, never()).updateBooking(any());
+    }
+
+    @Test
+    void testProcessPayment_BookingNotPending_ReturnsNull() {
+        String userId = "test-user-id";
+        String flightId = "test-flight-id";
+
+        Booking booking = new Booking();
+        booking.setUserId(userId);
+        booking.setFlightId(flightId);
+        booking.setStatus("CONFIRMED");
+
+        PaymentRequest request = new PaymentRequest();
+        request.setUserId(userId);
+        request.setFlightId(flightId);
+        request.setPaymentMethod("credit_card");
+        request.setAmount("100.00");
+
+        when(bookingStorage.findBooking(userId, flightId)).thenReturn(Optional.of(booking));
+
+        PaymentResponse response = payService.processPayment(request);
+
+        assertNull(response);
+        verify(bookingStorage, never()).updateBooking(any());
+    }
+
+    @Test
+    void testProcessPayment_UpdatesStatusToConfirmed() {
+        String userId = "test-user-id";
+        String flightId = "test-flight-id";
+
+        Booking booking = new Booking();
+        booking.setUserId(userId);
+        booking.setFlightId(flightId);
+        booking.setStatus("PENDING");
+
+        PaymentRequest request = new PaymentRequest();
+        request.setUserId(userId);
+        request.setFlightId(flightId);
+        request.setPaymentMethod("credit_card");
+        request.setAmount("100.00");
+
+        when(bookingStorage.findBooking(userId, flightId)).thenReturn(Optional.of(booking));
+
+        ArgumentCaptor<Booking> bookingCaptor = ArgumentCaptor.forClass(Booking.class);
+
+        payService.processPayment(request);
+
+        verify(bookingStorage).updateBooking(bookingCaptor.capture());
+        Booking updatedBooking = bookingCaptor.getValue();
+        assertEquals("CONFIRMED", updatedBooking.getStatus());
+        assertEquals(userId, updatedBooking.getUserId());
+        assertEquals(flightId, updatedBooking.getFlightId());
     }
 }
 
