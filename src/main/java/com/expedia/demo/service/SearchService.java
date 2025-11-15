@@ -1,92 +1,109 @@
 package com.expedia.demo.service;
 
-import com.expedia.demo.model.AviationstackRouteResponse;
 import com.expedia.demo.model.Flight;
+import com.expedia.demo.model.FlightDTO;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
+import jakarta.annotation.PostConstruct;
+import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class SearchService {
     private static final Logger logger = LoggerFactory.getLogger(SearchService.class);
-    private final RestTemplate restTemplate;
-    private final String apiKey;
-    private final String apiUrl;
     private final ObjectMapper objectMapper;
+    private List<Flight> allFlights;
+    
+    private static final DateTimeFormatter JSON_DATE_FORMAT = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+    private static final DateTimeFormatter FRONTEND_DATE_FORMAT = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
-    @Autowired
-    public SearchService(RestTemplate restTemplate,
-                         @Value("${aviationstack.api.key}") String apiKey,
-                         @Value("${aviationstack.api.url}") String apiUrl) {
-        this.restTemplate = restTemplate;
-        this.apiKey = apiKey;
-        this.apiUrl = apiUrl;
+    public SearchService() {
         this.objectMapper = new ObjectMapper();
+        this.allFlights = new ArrayList<>();
+    }
+
+    @PostConstruct
+    public void loadFlights() {
+        try {
+            ClassPathResource resource = new ClassPathResource("flights.json");
+            InputStream inputStream = resource.getInputStream();
+            
+            List<FlightDTO> flightDTOs = objectMapper.readValue(
+                inputStream, 
+                new TypeReference<List<FlightDTO>>() {}
+            );
+            
+            allFlights = flightDTOs.stream()
+                .map(this::convertToFlight)
+                .collect(Collectors.toList());
+            
+            logger.info("Loaded {} flights from flights.json", allFlights.size());
+        } catch (Exception e) {
+            logger.error("Error loading flights from flights.json", e);
+            allFlights = new ArrayList<>();
+        }
     }
 
     public List<Flight> searchFlights(String origin, String destination, String date) {
         logger.info("SearchService.searchFlights called with parameters - origin: {}, destination: {}, date: {}", 
                 origin, destination, date);
         
-        String url = String.format("%s/routes?access_key=%s&dep_iata=%s&arr_iata=%s",
-                apiUrl, apiKey, origin, destination);
-        
-        // Log URL with masked API key for security
-        String maskedUrl = url.replace(apiKey, "***");
-        logger.info("Making API request to URL: {}", maskedUrl);
-
         try {
-            AviationstackRouteResponse response = restTemplate.getForObject(url, AviationstackRouteResponse.class);
+            // Normalize date format for comparison
+            String normalizedDate = normalizeDate(date);
             
-            // Log the API response
-            if (response != null) {
-                try {
-                    String responseJson = objectMapper.writeValueAsString(response);
-                    logger.debug("API response received: {}", responseJson);
-                } catch (Exception jsonException) {
-                    logger.debug("API response received (unable to serialize to JSON): {}", response);
-                }
-            } else {
-                logger.warn("API response is null");
-            }
+            List<Flight> matchingFlights = allFlights.stream()
+                .filter(flight -> 
+                    flight.getOrigin().equalsIgnoreCase(origin) &&
+                    flight.getDestination().equalsIgnoreCase(destination) &&
+                    normalizeDate(flight.getDepartureDate()).equals(normalizedDate)
+                )
+                .collect(Collectors.toList());
             
-            List<Flight> flights = new ArrayList<>();
-
-            if (response != null && response.getData() != null) {
-                logger.info("Processing {} routes from API response", response.getData().size());
-                for (AviationstackRouteResponse.Route route : response.getData()) {
-                    String depIata = route.getDeparture() != null ? route.getDeparture().getIata() : origin;
-                    String arrIata = route.getArrival() != null ? route.getArrival().getIata() : destination;
-                    String airlineName = route.getAirline() != null && route.getAirline().getName() != null
-                            ? route.getAirline().getName() : "Unknown";
-                    String airlineIata = route.getAirline() != null && route.getAirline().getIata() != null
-                            ? route.getAirline().getIata() : "";
-
-                    // Generate flight_id from route data
-                    String flightId = generateFlightId(depIata, arrIata, airlineIata);
-
-                    Flight flight = new Flight(flightId, depIata, arrIata, date, airlineName);
-                    flights.add(flight);
-                }
-            } else {
-                logger.warn("API response data is null or empty");
-            }
-
-            logger.info("Returning {} flights", flights.size());
-            return flights;
+            logger.info("Found {} matching flights for origin: {}, destination: {}, date: {}", 
+                    matchingFlights.size(), origin, destination, date);
+            
+            return matchingFlights;
         } catch (Exception e) {
-            logger.error("Error occurred while calling flight search API", e);
+            logger.error("Error occurred while searching flights", e);
             return new ArrayList<>();
+        }
+    }
+    
+    private Flight convertToFlight(FlightDTO dto) {
+        String flightId = generateFlightId(dto.getOrigin(), dto.getDestination(), dto.getAirline());
+        return new Flight(flightId, dto.getOrigin(), dto.getDestination(), dto.getDate(), dto.getAirline());
+    }
+    
+    private String normalizeDate(String date) {
+        try {
+            // Try to parse as frontend format (YYYY-MM-DD) first
+            if (date.matches("\\d{4}-\\d{2}-\\d{2}")) {
+                LocalDate parsedDate = LocalDate.parse(date, FRONTEND_DATE_FORMAT);
+                return parsedDate.format(JSON_DATE_FORMAT);
+            }
+            // If already in JSON format (MM/dd/yyyy), return as is
+            if (date.matches("\\d{2}/\\d{2}/\\d{4}")) {
+                return date;
+            }
+            // If parsing fails, return original date
+            logger.warn("Unable to parse date format: {}", date);
+            return date;
+        } catch (Exception e) {
+            logger.warn("Error normalizing date: {}", date, e);
+            return date;
         }
     }
 

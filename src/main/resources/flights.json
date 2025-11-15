@@ -1,0 +1,3502 @@
+[
+  {
+    "origin": "DFW",
+    "destination": "CLT",
+    "date": "12/13/2025",
+    "price": 424,
+    "airline": "Delta"
+  },
+  {
+    "origin": "SFO",
+    "destination": "DEN",
+    "date": "01/02/2026",
+    "price": 234,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "MIA",
+    "destination": "CLT",
+    "date": "11/25/2025",
+    "price": 422,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "DEN",
+    "destination": "LAX",
+    "date": "01/13/2026",
+    "price": 563,
+    "airline": "Delta"
+  },
+  {
+    "origin": "LAS",
+    "destination": "ORD",
+    "date": "01/30/2026",
+    "price": 247,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "LAS",
+    "destination": "LAX",
+    "date": "01/10/2026",
+    "price": 798,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "DEN",
+    "destination": "CLT",
+    "date": "11/28/2025",
+    "price": 758,
+    "airline": "Delta"
+  },
+  {
+    "origin": "LAX",
+    "destination": "DEN",
+    "date": "01/16/2026",
+    "price": 289,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "JFK",
+    "destination": "LAX",
+    "date": "11/21/2025",
+    "price": 82,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "MIA",
+    "destination": "ORD",
+    "date": "01/05/2026",
+    "price": 707,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "DEN",
+    "destination": "SFO",
+    "date": "11/22/2025",
+    "price": 165,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "MIA",
+    "destination": "SFO",
+    "date": "01/03/2026",
+    "price": 837,
+    "airline": "Delta"
+  },
+  {
+    "origin": "JFK",
+    "destination": "CLT",
+    "date": "01/27/2026",
+    "price": 368,
+    "airline": "Delta"
+  },
+  {
+    "origin": "DEN",
+    "destination": "ATL",
+    "date": "12/12/2025",
+    "price": 515,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "JFK",
+    "destination": "DFW",
+    "date": "11/29/2025",
+    "price": 515,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "LAX",
+    "destination": "SFO",
+    "date": "12/03/2025",
+    "price": 490,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "LAS",
+    "destination": "MIA",
+    "date": "12/06/2025",
+    "price": 449,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "ATL",
+    "destination": "SFO",
+    "date": "11/26/2025",
+    "price": 354,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "JFK",
+    "destination": "ATL",
+    "date": "01/15/2026",
+    "price": 154,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "ORD",
+    "destination": "SFO",
+    "date": "12/07/2025",
+    "price": 542,
+    "airline": "United"
+  },
+  {
+    "origin": "MIA",
+    "destination": "ATL",
+    "date": "01/25/2026",
+    "price": 302,
+    "airline": "Delta"
+  },
+  {
+    "origin": "JFK",
+    "destination": "LAS",
+    "date": "11/28/2025",
+    "price": 470,
+    "airline": "Delta"
+  },
+  {
+    "origin": "DFW",
+    "destination": "JFK",
+    "date": "12/08/2025",
+    "price": 541,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAX",
+    "date": "01/01/2026",
+    "price": 557,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DEN",
+    "destination": "LAS",
+    "date": "01/28/2026",
+    "price": 543,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "ORD",
+    "destination": "CLT",
+    "date": "01/15/2026",
+    "price": 580,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "JFK",
+    "destination": "SFO",
+    "date": "01/30/2026",
+    "price": 813,
+    "airline": "United"
+  },
+  {
+    "origin": "DEN",
+    "destination": "SFO",
+    "date": "01/17/2026",
+    "price": 423,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "JFK",
+    "destination": "LAX",
+    "date": "12/21/2025",
+    "price": 694,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ORD",
+    "destination": "LAS",
+    "date": "12/12/2025",
+    "price": 864,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "SFO",
+    "destination": "LAS",
+    "date": "12/14/2025",
+    "price": 785,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "LAX",
+    "destination": "CLT",
+    "date": "01/22/2026",
+    "price": 641,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "MIA",
+    "destination": "JFK",
+    "date": "12/27/2025",
+    "price": 524,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "SFO",
+    "destination": "CLT",
+    "date": "12/14/2025",
+    "price": 867,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "MIA",
+    "destination": "CLT",
+    "date": "01/26/2026",
+    "price": 841,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "JFK",
+    "destination": "ORD",
+    "date": "12/07/2025",
+    "price": 146,
+    "airline": "United"
+  },
+  {
+    "origin": "DFW",
+    "destination": "CLT",
+    "date": "01/31/2026",
+    "price": 546,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "LAX",
+    "destination": "MIA",
+    "date": "12/22/2025",
+    "price": 174,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "LAS",
+    "destination": "SFO",
+    "date": "01/29/2026",
+    "price": 667,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "ORD",
+    "destination": "MIA",
+    "date": "12/21/2025",
+    "price": 617,
+    "airline": "Delta"
+  },
+  {
+    "origin": "CLT",
+    "destination": "DFW",
+    "date": "01/26/2026",
+    "price": 372,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "LAX",
+    "destination": "DEN",
+    "date": "12/13/2025",
+    "price": 256,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "JFK",
+    "destination": "LAX",
+    "date": "12/10/2025",
+    "price": 456,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "JFK",
+    "destination": "LAX",
+    "date": "01/03/2026",
+    "price": 111,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "CLT",
+    "destination": "ORD",
+    "date": "12/20/2025",
+    "price": 291,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "ORD",
+    "destination": "ATL",
+    "date": "12/03/2025",
+    "price": 527,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "CLT",
+    "destination": "MIA",
+    "date": "01/24/2026",
+    "price": 324,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "ORD",
+    "destination": "MIA",
+    "date": "01/22/2026",
+    "price": 335,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAX",
+    "date": "12/25/2025",
+    "price": 237,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "ATL",
+    "destination": "JFK",
+    "date": "12/11/2025",
+    "price": 435,
+    "airline": "Delta"
+  },
+  {
+    "origin": "MIA",
+    "destination": "SFO",
+    "date": "12/04/2025",
+    "price": 410,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "SFO",
+    "destination": "ORD",
+    "date": "01/30/2026",
+    "price": 444,
+    "airline": "United"
+  },
+  {
+    "origin": "CLT",
+    "destination": "ATL",
+    "date": "12/26/2025",
+    "price": 402,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "LAX",
+    "destination": "ORD",
+    "date": "01/06/2026",
+    "price": 389,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "LAX",
+    "destination": "DEN",
+    "date": "01/24/2026",
+    "price": 246,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "LAX",
+    "destination": "DEN",
+    "date": "01/24/2026",
+    "price": 831,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "DFW",
+    "destination": "LAX",
+    "date": "01/18/2026",
+    "price": 253,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "ORD",
+    "destination": "SFO",
+    "date": "01/16/2026",
+    "price": 101,
+    "airline": "United"
+  },
+  {
+    "origin": "DEN",
+    "destination": "ATL",
+    "date": "01/24/2026",
+    "price": 515,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "ORD",
+    "destination": "DFW",
+    "date": "01/04/2026",
+    "price": 741,
+    "airline": "United"
+  },
+  {
+    "origin": "CLT",
+    "destination": "ORD",
+    "date": "11/21/2025",
+    "price": 897,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "SFO",
+    "destination": "ORD",
+    "date": "11/30/2025",
+    "price": 199,
+    "airline": "United"
+  },
+  {
+    "origin": "DEN",
+    "destination": "LAS",
+    "date": "01/25/2026",
+    "price": 554,
+    "airline": "Delta"
+  },
+  {
+    "origin": "SFO",
+    "destination": "MIA",
+    "date": "11/21/2025",
+    "price": 445,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "SFO",
+    "destination": "DEN",
+    "date": "01/11/2026",
+    "price": 445,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "ATL",
+    "destination": "DEN",
+    "date": "11/25/2025",
+    "price": 542,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "CLT",
+    "destination": "ORD",
+    "date": "01/06/2026",
+    "price": 585,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAX",
+    "date": "12/31/2025",
+    "price": 460,
+    "airline": "United"
+  },
+  {
+    "origin": "LAX",
+    "destination": "JFK",
+    "date": "12/08/2025",
+    "price": 390,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "ATL",
+    "destination": "MIA",
+    "date": "01/04/2026",
+    "price": 240,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ORD",
+    "destination": "JFK",
+    "date": "01/19/2026",
+    "price": 650,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "CLT",
+    "destination": "ORD",
+    "date": "12/28/2025",
+    "price": 595,
+    "airline": "United"
+  },
+  {
+    "origin": "DEN",
+    "destination": "SFO",
+    "date": "01/16/2026",
+    "price": 126,
+    "airline": "United"
+  },
+  {
+    "origin": "CLT",
+    "destination": "SFO",
+    "date": "01/31/2026",
+    "price": 887,
+    "airline": "United"
+  },
+  {
+    "origin": "DEN",
+    "destination": "JFK",
+    "date": "01/15/2026",
+    "price": 221,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAX",
+    "date": "01/14/2026",
+    "price": 747,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "DEN",
+    "destination": "JFK",
+    "date": "11/27/2025",
+    "price": 512,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "DFW",
+    "destination": "LAS",
+    "date": "12/06/2025",
+    "price": 180,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "DFW",
+    "destination": "DEN",
+    "date": "01/14/2026",
+    "price": 510,
+    "airline": "Delta"
+  },
+  {
+    "origin": "MIA",
+    "destination": "ORD",
+    "date": "12/09/2025",
+    "price": 789,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "JFK",
+    "destination": "LAS",
+    "date": "01/05/2026",
+    "price": 571,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "SFO",
+    "destination": "JFK",
+    "date": "01/12/2026",
+    "price": 750,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "DEN",
+    "destination": "JFK",
+    "date": "01/18/2026",
+    "price": 246,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "CLT",
+    "destination": "MIA",
+    "date": "11/22/2025",
+    "price": 176,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "ATL",
+    "destination": "SFO",
+    "date": "01/10/2026",
+    "price": 375,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAX",
+    "date": "01/15/2026",
+    "price": 204,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "DFW",
+    "destination": "JFK",
+    "date": "12/09/2025",
+    "price": 697,
+    "airline": "United"
+  },
+  {
+    "origin": "SFO",
+    "destination": "LAX",
+    "date": "11/29/2025",
+    "price": 169,
+    "airline": "Delta"
+  },
+  {
+    "origin": "DEN",
+    "destination": "LAS",
+    "date": "01/02/2026",
+    "price": 899,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "LAS",
+    "destination": "JFK",
+    "date": "12/19/2025",
+    "price": 304,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "LAS",
+    "destination": "DFW",
+    "date": "12/18/2025",
+    "price": 836,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "MIA",
+    "destination": "JFK",
+    "date": "01/24/2026",
+    "price": 272,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "ORD",
+    "destination": "LAS",
+    "date": "12/03/2025",
+    "price": 169,
+    "airline": "Delta"
+  },
+  {
+    "origin": "DFW",
+    "destination": "LAX",
+    "date": "01/06/2026",
+    "price": 517,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "LAS",
+    "destination": "LAX",
+    "date": "12/29/2025",
+    "price": 417,
+    "airline": "United"
+  },
+  {
+    "origin": "LAS",
+    "destination": "ATL",
+    "date": "01/08/2026",
+    "price": 521,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "DFW",
+    "destination": "DEN",
+    "date": "01/04/2026",
+    "price": 726,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "JFK",
+    "destination": "CLT",
+    "date": "01/17/2026",
+    "price": 802,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "ORD",
+    "destination": "JFK",
+    "date": "11/28/2025",
+    "price": 641,
+    "airline": "United"
+  },
+  {
+    "origin": "LAS",
+    "destination": "SFO",
+    "date": "01/01/2026",
+    "price": 614,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "SFO",
+    "destination": "LAS",
+    "date": "01/09/2026",
+    "price": 403,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ORD",
+    "destination": "DEN",
+    "date": "01/13/2026",
+    "price": 877,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "ORD",
+    "destination": "LAS",
+    "date": "12/19/2025",
+    "price": 129,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "SFO",
+    "destination": "LAS",
+    "date": "01/27/2026",
+    "price": 770,
+    "airline": "United"
+  },
+  {
+    "origin": "DEN",
+    "destination": "LAX",
+    "date": "12/01/2025",
+    "price": 712,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "LAX",
+    "destination": "ATL",
+    "date": "12/08/2025",
+    "price": 467,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAS",
+    "date": "12/09/2025",
+    "price": 274,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "JFK",
+    "destination": "CLT",
+    "date": "01/04/2026",
+    "price": 126,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "LAX",
+    "destination": "JFK",
+    "date": "01/20/2026",
+    "price": 827,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "DEN",
+    "destination": "ORD",
+    "date": "12/21/2025",
+    "price": 712,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "ORD",
+    "destination": "LAX",
+    "date": "01/13/2026",
+    "price": 758,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "DEN",
+    "destination": "JFK",
+    "date": "01/10/2026",
+    "price": 206,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "ORD",
+    "destination": "SFO",
+    "date": "01/20/2026",
+    "price": 442,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "SFO",
+    "destination": "ATL",
+    "date": "01/14/2026",
+    "price": 93,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "LAX",
+    "destination": "JFK",
+    "date": "12/10/2025",
+    "price": 327,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "DFW",
+    "destination": "ATL",
+    "date": "01/25/2026",
+    "price": 278,
+    "airline": "United"
+  },
+  {
+    "origin": "LAS",
+    "destination": "LAX",
+    "date": "12/17/2025",
+    "price": 360,
+    "airline": "United"
+  },
+  {
+    "origin": "DEN",
+    "destination": "MIA",
+    "date": "12/12/2025",
+    "price": 181,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DFW",
+    "destination": "LAX",
+    "date": "01/22/2026",
+    "price": 654,
+    "airline": "Delta"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAS",
+    "date": "12/01/2025",
+    "price": 744,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ORD",
+    "destination": "JFK",
+    "date": "01/29/2026",
+    "price": 512,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "ATL",
+    "destination": "CLT",
+    "date": "01/11/2026",
+    "price": 304,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "LAX",
+    "destination": "SFO",
+    "date": "01/10/2026",
+    "price": 763,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "MIA",
+    "destination": "CLT",
+    "date": "01/27/2026",
+    "price": 563,
+    "airline": "United"
+  },
+  {
+    "origin": "DEN",
+    "destination": "JFK",
+    "date": "01/20/2026",
+    "price": 736,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "ORD",
+    "destination": "JFK",
+    "date": "01/27/2026",
+    "price": 394,
+    "airline": "United"
+  },
+  {
+    "origin": "DFW",
+    "destination": "ATL",
+    "date": "12/23/2025",
+    "price": 866,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "MIA",
+    "destination": "DEN",
+    "date": "01/29/2026",
+    "price": 395,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "ATL",
+    "destination": "DFW",
+    "date": "12/06/2025",
+    "price": 385,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "SFO",
+    "destination": "ATL",
+    "date": "12/28/2025",
+    "price": 383,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "ORD",
+    "destination": "LAS",
+    "date": "01/23/2026",
+    "price": 488,
+    "airline": "Delta"
+  },
+  {
+    "origin": "JFK",
+    "destination": "SFO",
+    "date": "12/09/2025",
+    "price": 840,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "ORD",
+    "destination": "DEN",
+    "date": "01/07/2026",
+    "price": 824,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "DEN",
+    "destination": "LAS",
+    "date": "01/02/2026",
+    "price": 787,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "CLT",
+    "destination": "MIA",
+    "date": "12/06/2025",
+    "price": 166,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "MIA",
+    "destination": "CLT",
+    "date": "01/17/2026",
+    "price": 281,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "ATL",
+    "destination": "SFO",
+    "date": "11/26/2025",
+    "price": 817,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DFW",
+    "destination": "ORD",
+    "date": "01/05/2026",
+    "price": 414,
+    "airline": "United"
+  },
+  {
+    "origin": "LAS",
+    "destination": "DEN",
+    "date": "12/12/2025",
+    "price": 635,
+    "airline": "Delta"
+  },
+  {
+    "origin": "LAX",
+    "destination": "SFO",
+    "date": "12/03/2025",
+    "price": 317,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "DEN",
+    "destination": "JFK",
+    "date": "12/31/2025",
+    "price": 439,
+    "airline": "Delta"
+  },
+  {
+    "origin": "SFO",
+    "destination": "ORD",
+    "date": "01/26/2026",
+    "price": 729,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DEN",
+    "destination": "LAS",
+    "date": "11/21/2025",
+    "price": 718,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "MIA",
+    "destination": "DFW",
+    "date": "01/15/2026",
+    "price": 154,
+    "airline": "United"
+  },
+  {
+    "origin": "MIA",
+    "destination": "DEN",
+    "date": "12/03/2025",
+    "price": 855,
+    "airline": "United"
+  },
+  {
+    "origin": "ATL",
+    "destination": "CLT",
+    "date": "12/31/2025",
+    "price": 636,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAS",
+    "date": "11/29/2025",
+    "price": 770,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "SFO",
+    "destination": "DEN",
+    "date": "01/28/2026",
+    "price": 139,
+    "airline": "United"
+  },
+  {
+    "origin": "MIA",
+    "destination": "ATL",
+    "date": "01/05/2026",
+    "price": 535,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "ORD",
+    "destination": "LAS",
+    "date": "12/26/2025",
+    "price": 441,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "ORD",
+    "destination": "LAX",
+    "date": "11/30/2025",
+    "price": 223,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "LAX",
+    "destination": "DEN",
+    "date": "11/22/2025",
+    "price": 151,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "DFW",
+    "destination": "CLT",
+    "date": "12/23/2025",
+    "price": 519,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "LAX",
+    "destination": "MIA",
+    "date": "01/08/2026",
+    "price": 809,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "DEN",
+    "destination": "LAX",
+    "date": "01/09/2026",
+    "price": 826,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "LAS",
+    "destination": "MIA",
+    "date": "12/21/2025",
+    "price": 698,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "CLT",
+    "destination": "SFO",
+    "date": "12/08/2025",
+    "price": 377,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DEN",
+    "destination": "CLT",
+    "date": "12/17/2025",
+    "price": 729,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "DFW",
+    "destination": "CLT",
+    "date": "12/21/2025",
+    "price": 895,
+    "airline": "Delta"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAX",
+    "date": "12/11/2025",
+    "price": 752,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "JFK",
+    "destination": "ORD",
+    "date": "12/31/2025",
+    "price": 359,
+    "airline": "United"
+  },
+  {
+    "origin": "LAS",
+    "destination": "SFO",
+    "date": "01/31/2026",
+    "price": 743,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "LAS",
+    "destination": "DFW",
+    "date": "01/13/2026",
+    "price": 376,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "DFW",
+    "destination": "CLT",
+    "date": "11/22/2025",
+    "price": 394,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DEN",
+    "destination": "ORD",
+    "date": "11/25/2025",
+    "price": 459,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "MIA",
+    "destination": "JFK",
+    "date": "12/06/2025",
+    "price": 169,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ORD",
+    "destination": "LAS",
+    "date": "12/02/2025",
+    "price": 820,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "DFW",
+    "destination": "CLT",
+    "date": "01/29/2026",
+    "price": 569,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "JFK",
+    "destination": "DFW",
+    "date": "01/30/2026",
+    "price": 432,
+    "airline": "Delta"
+  },
+  {
+    "origin": "MIA",
+    "destination": "SFO",
+    "date": "01/24/2026",
+    "price": 852,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "DFW",
+    "destination": "JFK",
+    "date": "12/26/2025",
+    "price": 750,
+    "airline": "Delta"
+  },
+  {
+    "origin": "MIA",
+    "destination": "LAS",
+    "date": "12/16/2025",
+    "price": 385,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "CLT",
+    "destination": "ATL",
+    "date": "01/08/2026",
+    "price": 408,
+    "airline": "United"
+  },
+  {
+    "origin": "ATL",
+    "destination": "LAS",
+    "date": "11/30/2025",
+    "price": 348,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "JFK",
+    "destination": "LAX",
+    "date": "01/20/2026",
+    "price": 464,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DFW",
+    "destination": "SFO",
+    "date": "01/24/2026",
+    "price": 852,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DEN",
+    "destination": "LAS",
+    "date": "01/14/2026",
+    "price": 640,
+    "airline": "United"
+  },
+  {
+    "origin": "DFW",
+    "destination": "LAX",
+    "date": "12/24/2025",
+    "price": 432,
+    "airline": "United"
+  },
+  {
+    "origin": "LAS",
+    "destination": "DFW",
+    "date": "11/22/2025",
+    "price": 433,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "ORD",
+    "destination": "CLT",
+    "date": "11/22/2025",
+    "price": 816,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "LAX",
+    "destination": "SFO",
+    "date": "12/01/2025",
+    "price": 126,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ORD",
+    "destination": "ATL",
+    "date": "11/28/2025",
+    "price": 269,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DFW",
+    "destination": "ATL",
+    "date": "11/28/2025",
+    "price": 299,
+    "airline": "Delta"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAX",
+    "date": "12/12/2025",
+    "price": 869,
+    "airline": "Delta"
+  },
+  {
+    "origin": "LAS",
+    "destination": "SFO",
+    "date": "12/09/2025",
+    "price": 366,
+    "airline": "United"
+  },
+  {
+    "origin": "JFK",
+    "destination": "SFO",
+    "date": "12/21/2025",
+    "price": 654,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "SFO",
+    "destination": "DEN",
+    "date": "12/12/2025",
+    "price": 776,
+    "airline": "United"
+  },
+  {
+    "origin": "ATL",
+    "destination": "SFO",
+    "date": "12/26/2025",
+    "price": 723,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "ATL",
+    "destination": "MIA",
+    "date": "12/28/2025",
+    "price": 116,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAS",
+    "date": "01/18/2026",
+    "price": 397,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ORD",
+    "destination": "SFO",
+    "date": "12/31/2025",
+    "price": 624,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DFW",
+    "destination": "ATL",
+    "date": "01/15/2026",
+    "price": 692,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "CLT",
+    "destination": "DFW",
+    "date": "11/25/2025",
+    "price": 95,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "DEN",
+    "destination": "ORD",
+    "date": "11/21/2025",
+    "price": 416,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "LAS",
+    "destination": "ATL",
+    "date": "11/29/2025",
+    "price": 611,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "ORD",
+    "destination": "LAS",
+    "date": "12/13/2025",
+    "price": 513,
+    "airline": "United"
+  },
+  {
+    "origin": "MIA",
+    "destination": "CLT",
+    "date": "01/05/2026",
+    "price": 287,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "ATL",
+    "destination": "LAS",
+    "date": "12/15/2025",
+    "price": 519,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "LAS",
+    "destination": "MIA",
+    "date": "01/19/2026",
+    "price": 699,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "LAX",
+    "destination": "MIA",
+    "date": "01/27/2026",
+    "price": 370,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "LAX",
+    "destination": "ORD",
+    "date": "12/02/2025",
+    "price": 890,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "LAS",
+    "destination": "DEN",
+    "date": "12/25/2025",
+    "price": 440,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "SFO",
+    "destination": "ATL",
+    "date": "01/08/2026",
+    "price": 220,
+    "airline": "United"
+  },
+  {
+    "origin": "CLT",
+    "destination": "ORD",
+    "date": "01/14/2026",
+    "price": 893,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "ORD",
+    "destination": "MIA",
+    "date": "01/03/2026",
+    "price": 569,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "ATL",
+    "destination": "ORD",
+    "date": "01/23/2026",
+    "price": 887,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "SFO",
+    "destination": "CLT",
+    "date": "01/25/2026",
+    "price": 839,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "LAS",
+    "destination": "ORD",
+    "date": "01/27/2026",
+    "price": 894,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "ATL",
+    "destination": "SFO",
+    "date": "12/19/2025",
+    "price": 167,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "LAS",
+    "destination": "LAX",
+    "date": "01/27/2026",
+    "price": 470,
+    "airline": "United"
+  },
+  {
+    "origin": "ATL",
+    "destination": "JFK",
+    "date": "12/06/2025",
+    "price": 531,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "LAX",
+    "destination": "ORD",
+    "date": "01/18/2026",
+    "price": 134,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "SFO",
+    "destination": "MIA",
+    "date": "12/30/2025",
+    "price": 644,
+    "airline": "United"
+  },
+  {
+    "origin": "ATL",
+    "destination": "LAX",
+    "date": "12/11/2025",
+    "price": 239,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "ATL",
+    "destination": "ORD",
+    "date": "12/16/2025",
+    "price": 578,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "DFW",
+    "destination": "ORD",
+    "date": "01/09/2026",
+    "price": 231,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "CLT",
+    "destination": "ORD",
+    "date": "12/13/2025",
+    "price": 233,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "ORD",
+    "destination": "ATL",
+    "date": "12/10/2025",
+    "price": 713,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "ATL",
+    "destination": "MIA",
+    "date": "01/22/2026",
+    "price": 522,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DFW",
+    "destination": "MIA",
+    "date": "01/03/2026",
+    "price": 859,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DFW",
+    "destination": "ORD",
+    "date": "01/30/2026",
+    "price": 84,
+    "airline": "Delta"
+  },
+  {
+    "origin": "DEN",
+    "destination": "ATL",
+    "date": "12/29/2025",
+    "price": 757,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "SFO",
+    "destination": "DFW",
+    "date": "12/05/2025",
+    "price": 744,
+    "airline": "United"
+  },
+  {
+    "origin": "LAS",
+    "destination": "SFO",
+    "date": "12/20/2025",
+    "price": 190,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "ATL",
+    "destination": "JFK",
+    "date": "12/17/2025",
+    "price": 138,
+    "airline": "United"
+  },
+  {
+    "origin": "ATL",
+    "destination": "JFK",
+    "date": "11/26/2025",
+    "price": 144,
+    "airline": "United"
+  },
+  {
+    "origin": "DEN",
+    "destination": "DFW",
+    "date": "01/11/2026",
+    "price": 267,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "ORD",
+    "destination": "CLT",
+    "date": "01/02/2026",
+    "price": 335,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "JFK",
+    "destination": "CLT",
+    "date": "11/28/2025",
+    "price": 480,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "MIA",
+    "destination": "CLT",
+    "date": "01/12/2026",
+    "price": 854,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "SFO",
+    "destination": "LAX",
+    "date": "01/11/2026",
+    "price": 628,
+    "airline": "Delta"
+  },
+  {
+    "origin": "DEN",
+    "destination": "SFO",
+    "date": "01/16/2026",
+    "price": 833,
+    "airline": "United"
+  },
+  {
+    "origin": "LAS",
+    "destination": "DFW",
+    "date": "01/20/2026",
+    "price": 324,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "LAS",
+    "destination": "DFW",
+    "date": "11/22/2025",
+    "price": 137,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "ATL",
+    "destination": "SFO",
+    "date": "12/02/2025",
+    "price": 443,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ORD",
+    "destination": "LAS",
+    "date": "11/26/2025",
+    "price": 570,
+    "airline": "United"
+  },
+  {
+    "origin": "LAS",
+    "destination": "ATL",
+    "date": "12/08/2025",
+    "price": 373,
+    "airline": "United"
+  },
+  {
+    "origin": "JFK",
+    "destination": "CLT",
+    "date": "11/22/2025",
+    "price": 242,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAX",
+    "date": "12/09/2025",
+    "price": 823,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "ORD",
+    "destination": "SFO",
+    "date": "01/22/2026",
+    "price": 579,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "LAX",
+    "destination": "CLT",
+    "date": "11/21/2025",
+    "price": 493,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "SFO",
+    "destination": "MIA",
+    "date": "01/12/2026",
+    "price": 416,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "LAS",
+    "destination": "ORD",
+    "date": "12/05/2025",
+    "price": 414,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "MIA",
+    "destination": "DFW",
+    "date": "11/24/2025",
+    "price": 278,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "JFK",
+    "destination": "LAS",
+    "date": "11/26/2025",
+    "price": 313,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "DFW",
+    "destination": "JFK",
+    "date": "12/08/2025",
+    "price": 289,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAX",
+    "date": "01/07/2026",
+    "price": 146,
+    "airline": "United"
+  },
+  {
+    "origin": "DEN",
+    "destination": "ATL",
+    "date": "11/24/2025",
+    "price": 495,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "JFK",
+    "destination": "LAX",
+    "date": "01/16/2026",
+    "price": 559,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "JFK",
+    "destination": "ORD",
+    "date": "01/16/2026",
+    "price": 785,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "LAS",
+    "destination": "ORD",
+    "date": "01/27/2026",
+    "price": 359,
+    "airline": "Delta"
+  },
+  {
+    "origin": "LAS",
+    "destination": "ORD",
+    "date": "12/17/2025",
+    "price": 842,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "LAS",
+    "destination": "CLT",
+    "date": "12/05/2025",
+    "price": 190,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "ATL",
+    "destination": "LAX",
+    "date": "12/29/2025",
+    "price": 397,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "ATL",
+    "destination": "DEN",
+    "date": "12/05/2025",
+    "price": 617,
+    "airline": "Delta"
+  },
+  {
+    "origin": "LAS",
+    "destination": "DEN",
+    "date": "12/19/2025",
+    "price": 521,
+    "airline": "United"
+  },
+  {
+    "origin": "JFK",
+    "destination": "DFW",
+    "date": "01/27/2026",
+    "price": 220,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "MIA",
+    "destination": "ORD",
+    "date": "01/04/2026",
+    "price": 305,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "ATL",
+    "destination": "ORD",
+    "date": "12/27/2025",
+    "price": 497,
+    "airline": "United"
+  },
+  {
+    "origin": "LAX",
+    "destination": "ATL",
+    "date": "11/27/2025",
+    "price": 473,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "ATL",
+    "destination": "DEN",
+    "date": "12/20/2025",
+    "price": 439,
+    "airline": "Delta"
+  },
+  {
+    "origin": "LAX",
+    "destination": "ORD",
+    "date": "01/14/2026",
+    "price": 598,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "MIA",
+    "destination": "DEN",
+    "date": "12/29/2025",
+    "price": 109,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "MIA",
+    "destination": "LAS",
+    "date": "01/03/2026",
+    "price": 172,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "LAS",
+    "destination": "DEN",
+    "date": "01/19/2026",
+    "price": 230,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "JFK",
+    "destination": "CLT",
+    "date": "01/07/2026",
+    "price": 746,
+    "airline": "Delta"
+  },
+  {
+    "origin": "DEN",
+    "destination": "ORD",
+    "date": "11/24/2025",
+    "price": 395,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "DFW",
+    "destination": "ATL",
+    "date": "01/21/2026",
+    "price": 723,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DFW",
+    "destination": "SFO",
+    "date": "12/16/2025",
+    "price": 266,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "ATL",
+    "destination": "LAS",
+    "date": "01/29/2026",
+    "price": 653,
+    "airline": "Delta"
+  },
+  {
+    "origin": "LAX",
+    "destination": "DFW",
+    "date": "11/29/2025",
+    "price": 143,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "ATL",
+    "destination": "DFW",
+    "date": "12/01/2025",
+    "price": 376,
+    "airline": "United"
+  },
+  {
+    "origin": "JFK",
+    "destination": "LAX",
+    "date": "01/18/2026",
+    "price": 590,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "MIA",
+    "destination": "DEN",
+    "date": "12/05/2025",
+    "price": 298,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ORD",
+    "destination": "LAS",
+    "date": "01/13/2026",
+    "price": 680,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "MIA",
+    "destination": "ORD",
+    "date": "01/31/2026",
+    "price": 770,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "SFO",
+    "destination": "JFK",
+    "date": "12/31/2025",
+    "price": 217,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "ATL",
+    "destination": "SFO",
+    "date": "12/10/2025",
+    "price": 895,
+    "airline": "Delta"
+  },
+  {
+    "origin": "SFO",
+    "destination": "LAX",
+    "date": "01/21/2026",
+    "price": 306,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ATL",
+    "destination": "LAX",
+    "date": "12/20/2025",
+    "price": 351,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DEN",
+    "destination": "LAX",
+    "date": "12/16/2025",
+    "price": 669,
+    "airline": "United"
+  },
+  {
+    "origin": "ATL",
+    "destination": "DFW",
+    "date": "01/20/2026",
+    "price": 526,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "CLT",
+    "destination": "ORD",
+    "date": "11/28/2025",
+    "price": 402,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "MIA",
+    "destination": "ORD",
+    "date": "12/21/2025",
+    "price": 481,
+    "airline": "United"
+  },
+  {
+    "origin": "LAX",
+    "destination": "LAS",
+    "date": "01/16/2026",
+    "price": 91,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "CLT",
+    "destination": "DFW",
+    "date": "12/03/2025",
+    "price": 589,
+    "airline": "Delta"
+  },
+  {
+    "origin": "DEN",
+    "destination": "ATL",
+    "date": "01/06/2026",
+    "price": 141,
+    "airline": "United"
+  },
+  {
+    "origin": "LAS",
+    "destination": "JFK",
+    "date": "01/19/2026",
+    "price": 803,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DFW",
+    "destination": "JFK",
+    "date": "01/21/2026",
+    "price": 186,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DEN",
+    "destination": "LAX",
+    "date": "01/07/2026",
+    "price": 414,
+    "airline": "Delta"
+  },
+  {
+    "origin": "JFK",
+    "destination": "LAS",
+    "date": "12/26/2025",
+    "price": 665,
+    "airline": "Delta"
+  },
+  {
+    "origin": "LAX",
+    "destination": "ATL",
+    "date": "01/29/2026",
+    "price": 244,
+    "airline": "Delta"
+  },
+  {
+    "origin": "SFO",
+    "destination": "JFK",
+    "date": "12/12/2025",
+    "price": 595,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "LAS",
+    "destination": "CLT",
+    "date": "01/31/2026",
+    "price": 830,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "MIA",
+    "destination": "DEN",
+    "date": "12/04/2025",
+    "price": 612,
+    "airline": "Delta"
+  },
+  {
+    "origin": "LAS",
+    "destination": "DFW",
+    "date": "12/26/2025",
+    "price": 425,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DFW",
+    "destination": "ATL",
+    "date": "12/04/2025",
+    "price": 133,
+    "airline": "United"
+  },
+  {
+    "origin": "SFO",
+    "destination": "MIA",
+    "date": "01/19/2026",
+    "price": 467,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ATL",
+    "destination": "DEN",
+    "date": "12/29/2025",
+    "price": 85,
+    "airline": "United"
+  },
+  {
+    "origin": "LAS",
+    "destination": "ORD",
+    "date": "01/31/2026",
+    "price": 529,
+    "airline": "Delta"
+  },
+  {
+    "origin": "LAS",
+    "destination": "DFW",
+    "date": "12/01/2025",
+    "price": 176,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "MIA",
+    "destination": "JFK",
+    "date": "01/29/2026",
+    "price": 530,
+    "airline": "United"
+  },
+  {
+    "origin": "ATL",
+    "destination": "CLT",
+    "date": "12/17/2025",
+    "price": 721,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "MIA",
+    "destination": "ORD",
+    "date": "12/30/2025",
+    "price": 397,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "LAX",
+    "destination": "DEN",
+    "date": "12/26/2025",
+    "price": 124,
+    "airline": "United"
+  },
+  {
+    "origin": "MIA",
+    "destination": "DFW",
+    "date": "12/29/2025",
+    "price": 532,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "DFW",
+    "destination": "LAS",
+    "date": "12/25/2025",
+    "price": 274,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ORD",
+    "destination": "DFW",
+    "date": "11/27/2025",
+    "price": 776,
+    "airline": "Delta"
+  },
+  {
+    "origin": "SFO",
+    "destination": "LAS",
+    "date": "12/11/2025",
+    "price": 519,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "CLT",
+    "destination": "DEN",
+    "date": "12/22/2025",
+    "price": 879,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "ATL",
+    "destination": "DFW",
+    "date": "01/18/2026",
+    "price": 203,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "DEN",
+    "destination": "CLT",
+    "date": "01/15/2026",
+    "price": 381,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "ATL",
+    "destination": "SFO",
+    "date": "12/01/2025",
+    "price": 525,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "DEN",
+    "destination": "DFW",
+    "date": "12/06/2025",
+    "price": 896,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "LAS",
+    "destination": "LAX",
+    "date": "12/11/2025",
+    "price": 506,
+    "airline": "United"
+  },
+  {
+    "origin": "MIA",
+    "destination": "LAS",
+    "date": "01/30/2026",
+    "price": 881,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DFW",
+    "destination": "LAS",
+    "date": "12/26/2025",
+    "price": 745,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DEN",
+    "destination": "LAX",
+    "date": "12/15/2025",
+    "price": 285,
+    "airline": "Delta"
+  },
+  {
+    "origin": "JFK",
+    "destination": "DFW",
+    "date": "12/10/2025",
+    "price": 568,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "CLT",
+    "destination": "SFO",
+    "date": "01/10/2026",
+    "price": 599,
+    "airline": "United"
+  },
+  {
+    "origin": "CLT",
+    "destination": "ORD",
+    "date": "01/25/2026",
+    "price": 377,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "JFK",
+    "destination": "MIA",
+    "date": "01/22/2026",
+    "price": 160,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "DEN",
+    "destination": "JFK",
+    "date": "12/23/2025",
+    "price": 610,
+    "airline": "Delta"
+  },
+  {
+    "origin": "JFK",
+    "destination": "MIA",
+    "date": "12/11/2025",
+    "price": 84,
+    "airline": "Delta"
+  },
+  {
+    "origin": "LAX",
+    "destination": "JFK",
+    "date": "01/30/2026",
+    "price": 609,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "ORD",
+    "destination": "JFK",
+    "date": "12/29/2025",
+    "price": 592,
+    "airline": "United"
+  },
+  {
+    "origin": "DFW",
+    "destination": "DEN",
+    "date": "11/21/2025",
+    "price": 112,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "LAS",
+    "destination": "JFK",
+    "date": "01/15/2026",
+    "price": 81,
+    "airline": "United"
+  },
+  {
+    "origin": "ATL",
+    "destination": "LAX",
+    "date": "12/26/2025",
+    "price": 605,
+    "airline": "Delta"
+  },
+  {
+    "origin": "CLT",
+    "destination": "ORD",
+    "date": "12/05/2025",
+    "price": 177,
+    "airline": "Delta"
+  },
+  {
+    "origin": "LAX",
+    "destination": "SFO",
+    "date": "12/19/2025",
+    "price": 718,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ATL",
+    "destination": "DFW",
+    "date": "12/20/2025",
+    "price": 882,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "LAX",
+    "destination": "DFW",
+    "date": "01/08/2026",
+    "price": 630,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "ATL",
+    "destination": "SFO",
+    "date": "12/18/2025",
+    "price": 497,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "SFO",
+    "destination": "ORD",
+    "date": "11/21/2025",
+    "price": 356,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAS",
+    "date": "01/29/2026",
+    "price": 532,
+    "airline": "Delta"
+  },
+  {
+    "origin": "DFW",
+    "destination": "ORD",
+    "date": "12/18/2025",
+    "price": 822,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "LAX",
+    "destination": "ATL",
+    "date": "01/18/2026",
+    "price": 879,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "LAS",
+    "destination": "MIA",
+    "date": "01/13/2026",
+    "price": 553,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "ORD",
+    "destination": "MIA",
+    "date": "01/16/2026",
+    "price": 393,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DEN",
+    "destination": "SFO",
+    "date": "12/20/2025",
+    "price": 877,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "DFW",
+    "destination": "ATL",
+    "date": "11/25/2025",
+    "price": 586,
+    "airline": "Delta"
+  },
+  {
+    "origin": "SFO",
+    "destination": "ORD",
+    "date": "01/05/2026",
+    "price": 854,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "ATL",
+    "destination": "LAX",
+    "date": "12/19/2025",
+    "price": 452,
+    "airline": "Delta"
+  },
+  {
+    "origin": "LAS",
+    "destination": "JFK",
+    "date": "11/28/2025",
+    "price": 224,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "LAX",
+    "destination": "MIA",
+    "date": "01/19/2026",
+    "price": 198,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "MIA",
+    "destination": "SFO",
+    "date": "12/23/2025",
+    "price": 101,
+    "airline": "United"
+  },
+  {
+    "origin": "MIA",
+    "destination": "DEN",
+    "date": "01/23/2026",
+    "price": 617,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "SFO",
+    "destination": "MIA",
+    "date": "01/06/2026",
+    "price": 537,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "SFO",
+    "destination": "ATL",
+    "date": "11/30/2025",
+    "price": 177,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "ATL",
+    "destination": "MIA",
+    "date": "01/03/2026",
+    "price": 148,
+    "airline": "United"
+  },
+  {
+    "origin": "DFW",
+    "destination": "MIA",
+    "date": "01/12/2026",
+    "price": 828,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "JFK",
+    "destination": "MIA",
+    "date": "12/13/2025",
+    "price": 536,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "JFK",
+    "destination": "DEN",
+    "date": "12/22/2025",
+    "price": 430,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "LAX",
+    "destination": "CLT",
+    "date": "11/27/2025",
+    "price": 134,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "LAS",
+    "destination": "DFW",
+    "date": "12/31/2025",
+    "price": 415,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "SFO",
+    "destination": "MIA",
+    "date": "12/31/2025",
+    "price": 319,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "DFW",
+    "destination": "CLT",
+    "date": "01/28/2026",
+    "price": 592,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "DEN",
+    "destination": "JFK",
+    "date": "01/06/2026",
+    "price": 517,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "LAX",
+    "destination": "JFK",
+    "date": "12/04/2025",
+    "price": 567,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "SFO",
+    "destination": "DFW",
+    "date": "01/03/2026",
+    "price": 242,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "LAS",
+    "destination": "ATL",
+    "date": "01/14/2026",
+    "price": 548,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "MIA",
+    "destination": "ORD",
+    "date": "12/02/2025",
+    "price": 394,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "JFK",
+    "destination": "LAX",
+    "date": "01/27/2026",
+    "price": 88,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "LAX",
+    "destination": "ATL",
+    "date": "11/30/2025",
+    "price": 555,
+    "airline": "Delta"
+  },
+  {
+    "origin": "SFO",
+    "destination": "LAS",
+    "date": "01/10/2026",
+    "price": 331,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "SFO",
+    "destination": "ATL",
+    "date": "01/15/2026",
+    "price": 84,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "DEN",
+    "destination": "LAX",
+    "date": "12/10/2025",
+    "price": 493,
+    "airline": "United"
+  },
+  {
+    "origin": "DEN",
+    "destination": "CLT",
+    "date": "12/28/2025",
+    "price": 659,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "ORD",
+    "destination": "SFO",
+    "date": "12/21/2025",
+    "price": 194,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "DEN",
+    "destination": "ORD",
+    "date": "01/27/2026",
+    "price": 324,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ATL",
+    "destination": "LAS",
+    "date": "12/01/2025",
+    "price": 468,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "CLT",
+    "destination": "SFO",
+    "date": "12/06/2025",
+    "price": 403,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DEN",
+    "destination": "ATL",
+    "date": "12/07/2025",
+    "price": 466,
+    "airline": "United"
+  },
+  {
+    "origin": "DFW",
+    "destination": "DEN",
+    "date": "01/18/2026",
+    "price": 410,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "DFW",
+    "destination": "ORD",
+    "date": "12/01/2025",
+    "price": 262,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "SFO",
+    "destination": "DEN",
+    "date": "12/13/2025",
+    "price": 290,
+    "airline": "Delta"
+  },
+  {
+    "origin": "MIA",
+    "destination": "ORD",
+    "date": "01/29/2026",
+    "price": 467,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DFW",
+    "destination": "SFO",
+    "date": "01/27/2026",
+    "price": 298,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "SFO",
+    "destination": "ORD",
+    "date": "01/23/2026",
+    "price": 780,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DEN",
+    "destination": "LAS",
+    "date": "01/26/2026",
+    "price": 871,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "LAS",
+    "destination": "CLT",
+    "date": "01/19/2026",
+    "price": 378,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "JFK",
+    "destination": "LAX",
+    "date": "01/24/2026",
+    "price": 250,
+    "airline": "Delta"
+  },
+  {
+    "origin": "LAX",
+    "destination": "DEN",
+    "date": "01/03/2026",
+    "price": 315,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "MIA",
+    "destination": "LAS",
+    "date": "01/21/2026",
+    "price": 723,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "LAX",
+    "destination": "JFK",
+    "date": "12/15/2025",
+    "price": 135,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "SFO",
+    "destination": "LAS",
+    "date": "01/03/2026",
+    "price": 791,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAX",
+    "date": "01/07/2026",
+    "price": 391,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "CLT",
+    "destination": "ORD",
+    "date": "01/21/2026",
+    "price": 264,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "SFO",
+    "destination": "CLT",
+    "date": "12/25/2025",
+    "price": 236,
+    "airline": "United"
+  },
+  {
+    "origin": "ATL",
+    "destination": "DEN",
+    "date": "12/02/2025",
+    "price": 709,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "JFK",
+    "destination": "ORD",
+    "date": "12/23/2025",
+    "price": 122,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DFW",
+    "destination": "MIA",
+    "date": "11/22/2025",
+    "price": 522,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ORD",
+    "destination": "SFO",
+    "date": "01/16/2026",
+    "price": 206,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAX",
+    "date": "01/05/2026",
+    "price": 317,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "MIA",
+    "destination": "CLT",
+    "date": "12/27/2025",
+    "price": 154,
+    "airline": "United"
+  },
+  {
+    "origin": "ORD",
+    "destination": "DFW",
+    "date": "11/21/2025",
+    "price": 702,
+    "airline": "United"
+  },
+  {
+    "origin": "ATL",
+    "destination": "LAS",
+    "date": "01/17/2026",
+    "price": 751,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "LAS",
+    "destination": "ORD",
+    "date": "12/05/2025",
+    "price": 198,
+    "airline": "Delta"
+  },
+  {
+    "origin": "LAX",
+    "destination": "DEN",
+    "date": "12/14/2025",
+    "price": 83,
+    "airline": "United"
+  },
+  {
+    "origin": "SFO",
+    "destination": "CLT",
+    "date": "12/24/2025",
+    "price": 247,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "LAS",
+    "destination": "DFW",
+    "date": "12/20/2025",
+    "price": 422,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ORD",
+    "destination": "LAS",
+    "date": "12/12/2025",
+    "price": 597,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "MIA",
+    "destination": "LAX",
+    "date": "01/25/2026",
+    "price": 245,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "DEN",
+    "destination": "ORD",
+    "date": "11/21/2025",
+    "price": 564,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "LAX",
+    "destination": "CLT",
+    "date": "01/01/2026",
+    "price": 203,
+    "airline": "Delta"
+  },
+  {
+    "origin": "DEN",
+    "destination": "ORD",
+    "date": "12/18/2025",
+    "price": 358,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "MIA",
+    "destination": "LAX",
+    "date": "01/09/2026",
+    "price": 482,
+    "airline": "United"
+  },
+  {
+    "origin": "ORD",
+    "destination": "DEN",
+    "date": "01/03/2026",
+    "price": 199,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "MIA",
+    "destination": "JFK",
+    "date": "12/21/2025",
+    "price": 793,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "DFW",
+    "destination": "DEN",
+    "date": "01/13/2026",
+    "price": 817,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "LAS",
+    "destination": "SFO",
+    "date": "12/01/2025",
+    "price": 525,
+    "airline": "United"
+  },
+  {
+    "origin": "ATL",
+    "destination": "DFW",
+    "date": "01/19/2026",
+    "price": 484,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "CLT",
+    "destination": "DFW",
+    "date": "12/01/2025",
+    "price": 477,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "ORD",
+    "destination": "JFK",
+    "date": "12/12/2025",
+    "price": 483,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "CLT",
+    "destination": "ORD",
+    "date": "12/13/2025",
+    "price": 617,
+    "airline": "United"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAX",
+    "date": "01/11/2026",
+    "price": 703,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "DEN",
+    "destination": "ORD",
+    "date": "01/04/2026",
+    "price": 435,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "DFW",
+    "destination": "ORD",
+    "date": "12/28/2025",
+    "price": 429,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAX",
+    "date": "01/10/2026",
+    "price": 421,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "MIA",
+    "destination": "ATL",
+    "date": "01/28/2026",
+    "price": 506,
+    "airline": "United"
+  },
+  {
+    "origin": "LAX",
+    "destination": "SFO",
+    "date": "01/04/2026",
+    "price": 421,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "SFO",
+    "destination": "LAX",
+    "date": "01/23/2026",
+    "price": 210,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "ORD",
+    "destination": "LAS",
+    "date": "01/15/2026",
+    "price": 346,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "DEN",
+    "destination": "ATL",
+    "date": "11/26/2025",
+    "price": 150,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "ATL",
+    "destination": "DEN",
+    "date": "01/06/2026",
+    "price": 148,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "JFK",
+    "destination": "CLT",
+    "date": "01/09/2026",
+    "price": 179,
+    "airline": "United"
+  },
+  {
+    "origin": "ATL",
+    "destination": "MIA",
+    "date": "11/21/2025",
+    "price": 120,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "MIA",
+    "destination": "CLT",
+    "date": "01/26/2026",
+    "price": 523,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "LAS",
+    "destination": "SFO",
+    "date": "12/30/2025",
+    "price": 710,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "JFK",
+    "destination": "CLT",
+    "date": "01/15/2026",
+    "price": 383,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "CLT",
+    "destination": "DFW",
+    "date": "12/28/2025",
+    "price": 449,
+    "airline": "United"
+  },
+  {
+    "origin": "MIA",
+    "destination": "ORD",
+    "date": "01/02/2026",
+    "price": 185,
+    "airline": "United"
+  },
+  {
+    "origin": "LAS",
+    "destination": "DFW",
+    "date": "12/28/2025",
+    "price": 269,
+    "airline": "United"
+  },
+  {
+    "origin": "MIA",
+    "destination": "LAX",
+    "date": "12/06/2025",
+    "price": 689,
+    "airline": "United"
+  },
+  {
+    "origin": "MIA",
+    "destination": "ATL",
+    "date": "01/21/2026",
+    "price": 612,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "SFO",
+    "destination": "MIA",
+    "date": "12/08/2025",
+    "price": 239,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "ORD",
+    "destination": "DFW",
+    "date": "01/18/2026",
+    "price": 188,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ATL",
+    "destination": "SFO",
+    "date": "11/23/2025",
+    "price": 869,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "ATL",
+    "destination": "LAS",
+    "date": "12/11/2025",
+    "price": 130,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "MIA",
+    "destination": "SFO",
+    "date": "01/16/2026",
+    "price": 272,
+    "airline": "United"
+  },
+  {
+    "origin": "ORD",
+    "destination": "LAX",
+    "date": "11/30/2025",
+    "price": 834,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "CLT",
+    "destination": "ORD",
+    "date": "12/13/2025",
+    "price": 411,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "ORD",
+    "destination": "DFW",
+    "date": "01/28/2026",
+    "price": 426,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "DFW",
+    "destination": "MIA",
+    "date": "01/10/2026",
+    "price": 425,
+    "airline": "United"
+  },
+  {
+    "origin": "JFK",
+    "destination": "ORD",
+    "date": "11/29/2025",
+    "price": 377,
+    "airline": "Delta"
+  },
+  {
+    "origin": "LAX",
+    "destination": "ORD",
+    "date": "01/16/2026",
+    "price": 202,
+    "airline": "Delta"
+  },
+  {
+    "origin": "CLT",
+    "destination": "DFW",
+    "date": "01/05/2026",
+    "price": 764,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ORD",
+    "destination": "ATL",
+    "date": "12/30/2025",
+    "price": 341,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "JFK",
+    "destination": "LAS",
+    "date": "11/30/2025",
+    "price": 299,
+    "airline": "United"
+  },
+  {
+    "origin": "CLT",
+    "destination": "ORD",
+    "date": "12/16/2025",
+    "price": 788,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "LAS",
+    "destination": "ATL",
+    "date": "12/02/2025",
+    "price": 882,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "JFK",
+    "destination": "ORD",
+    "date": "01/21/2026",
+    "price": 494,
+    "airline": "United"
+  },
+  {
+    "origin": "DFW",
+    "destination": "MIA",
+    "date": "12/30/2025",
+    "price": 102,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ORD",
+    "destination": "LAS",
+    "date": "01/14/2026",
+    "price": 421,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "LAS",
+    "destination": "DEN",
+    "date": "01/15/2026",
+    "price": 242,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "SFO",
+    "destination": "DEN",
+    "date": "11/30/2025",
+    "price": 139,
+    "airline": "Delta"
+  },
+  {
+    "origin": "SFO",
+    "destination": "DFW",
+    "date": "12/13/2025",
+    "price": 457,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "LAS",
+    "destination": "DFW",
+    "date": "01/29/2026",
+    "price": 702,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "SFO",
+    "destination": "DFW",
+    "date": "11/29/2025",
+    "price": 463,
+    "airline": "Delta"
+  },
+  {
+    "origin": "MIA",
+    "destination": "SFO",
+    "date": "01/27/2026",
+    "price": 868,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "SFO",
+    "destination": "DFW",
+    "date": "11/24/2025",
+    "price": 329,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "CLT",
+    "destination": "JFK",
+    "date": "01/24/2026",
+    "price": 846,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "JFK",
+    "destination": "CLT",
+    "date": "12/13/2025",
+    "price": 589,
+    "airline": "Delta"
+  },
+  {
+    "origin": "MIA",
+    "destination": "LAX",
+    "date": "01/29/2026",
+    "price": 719,
+    "airline": "Delta"
+  },
+  {
+    "origin": "JFK",
+    "destination": "LAS",
+    "date": "11/27/2025",
+    "price": 797,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "DFW",
+    "destination": "LAX",
+    "date": "12/05/2025",
+    "price": 142,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "SFO",
+    "destination": "LAS",
+    "date": "12/18/2025",
+    "price": 858,
+    "airline": "United"
+  },
+  {
+    "origin": "JFK",
+    "destination": "LAS",
+    "date": "12/26/2025",
+    "price": 463,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ORD",
+    "destination": "LAX",
+    "date": "12/09/2025",
+    "price": 120,
+    "airline": "United"
+  },
+  {
+    "origin": "LAX",
+    "destination": "SFO",
+    "date": "12/13/2025",
+    "price": 830,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DEN",
+    "destination": "ORD",
+    "date": "12/09/2025",
+    "price": 114,
+    "airline": "United"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAX",
+    "date": "01/06/2026",
+    "price": 320,
+    "airline": "United"
+  },
+  {
+    "origin": "MIA",
+    "destination": "DFW",
+    "date": "12/20/2025",
+    "price": 298,
+    "airline": "Delta"
+  },
+  {
+    "origin": "LAS",
+    "destination": "DFW",
+    "date": "01/02/2026",
+    "price": 426,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "ATL",
+    "destination": "DEN",
+    "date": "11/27/2025",
+    "price": 353,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "LAS",
+    "destination": "DFW",
+    "date": "11/28/2025",
+    "price": 887,
+    "airline": "Delta"
+  },
+  {
+    "origin": "LAS",
+    "destination": "ATL",
+    "date": "01/23/2026",
+    "price": 452,
+    "airline": "Delta"
+  },
+  {
+    "origin": "MIA",
+    "destination": "LAX",
+    "date": "12/25/2025",
+    "price": 155,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DEN",
+    "destination": "SFO",
+    "date": "12/16/2025",
+    "price": 243,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "DFW",
+    "destination": "CLT",
+    "date": "12/07/2025",
+    "price": 411,
+    "airline": "JetBlue"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAS",
+    "date": "01/06/2026",
+    "price": 254,
+    "airline": "Delta"
+  },
+  {
+    "origin": "DFW",
+    "destination": "JFK",
+    "date": "11/28/2025",
+    "price": 605,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "MIA",
+    "destination": "LAS",
+    "date": "01/17/2026",
+    "price": 890,
+    "airline": "Southwest"
+  },
+  {
+    "origin": "MIA",
+    "destination": "SFO",
+    "date": "11/22/2025",
+    "price": 218,
+    "airline": "United"
+  },
+  {
+    "origin": "ATL",
+    "destination": "DFW",
+    "date": "11/23/2025",
+    "price": 502,
+    "airline": "Delta"
+  },
+  {
+    "origin": "ORD",
+    "destination": "ATL",
+    "date": "12/08/2025",
+    "price": 177,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "LAX",
+    "destination": "MIA",
+    "date": "12/29/2025",
+    "price": 161,
+    "airline": "Virgin"
+  },
+  {
+    "origin": "DEN",
+    "destination": "ORD",
+    "date": "01/23/2026",
+    "price": 775,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "LAX",
+    "destination": "ATL",
+    "date": "12/27/2025",
+    "price": 360,
+    "airline": "Delta"
+  },
+  {
+    "origin": "CLT",
+    "destination": "DEN",
+    "date": "12/03/2025",
+    "price": 701,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "MIA",
+    "destination": "JFK",
+    "date": "12/18/2025",
+    "price": 553,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "MIA",
+    "destination": "ATL",
+    "date": "12/12/2025",
+    "price": 472,
+    "airline": "United"
+  },
+  {
+    "origin": "LAS",
+    "destination": "DEN",
+    "date": "12/18/2025",
+    "price": 558,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "CLT",
+    "destination": "SFO",
+    "date": "01/29/2026",
+    "price": 787,
+    "airline": "United"
+  },
+  {
+    "origin": "CLT",
+    "destination": "DEN",
+    "date": "12/10/2025",
+    "price": 112,
+    "airline": "Delta"
+  },
+  {
+    "origin": "DFW",
+    "destination": "JFK",
+    "date": "12/10/2025",
+    "price": 817,
+    "airline": "Delta"
+  },
+  {
+    "origin": "JFK",
+    "destination": "LAX",
+    "date": "11/21/2025",
+    "price": 328,
+    "airline": "United"
+  },
+  {
+    "origin": "ATL",
+    "destination": "MIA",
+    "date": "01/09/2026",
+    "price": 900,
+    "airline": "Alaska"
+  },
+  {
+    "origin": "CLT",
+    "destination": "LAS",
+    "date": "12/13/2025",
+    "price": 592,
+    "airline": "Alaska"
+  }
+]
