@@ -1,0 +1,23 @@
+[
+  {
+    "origin": "NYC",
+    "destination": "LAX",
+    "date": "12/01/2025",
+    "price": 350,
+    "airline": "Test Airlines"
+  },
+  {
+    "origin": "SFO",
+    "destination": "ORD",
+    "date": "12/15/2025",
+    "price": 280,
+    "airline": "Delta"
+  },
+  {
+    "origin": "NYC",
+    "destination": "LAX",
+    "date": "12/01/2025",
+    "price": 400,
+    "airline": "United"
+  }
+]
