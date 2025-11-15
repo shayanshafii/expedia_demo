@@ -101,7 +101,7 @@
                 <executions>
                     <execution>
                         <id>copy-jacoco-reports</id>
-                        <phase>package</phase>
+                        <phase>test</phase>
                         <goals>
                             <goal>copy-resources</goal>
                         </goals>
