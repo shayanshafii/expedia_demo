@@ -26,6 +26,12 @@ public class BookingStorage {
         initializeFile();
     }
 
+    public BookingStorage(Path customPath) {
+        this.objectMapper = new ObjectMapper();
+        this.bookingsPath = customPath;
+        initializeFile();
+    }
+
     private void initializeFile() {
         try {
             if (!Files.exists(bookingsPath)) {
