@@ -48,6 +48,18 @@
             border-radius: 4px;
             background-color: #f9f9f9;
         }
+        .flight-item strong {
+            display: block;
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+        .flight-item .flight-detail {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        .flight-item button {
+            margin-top: 15px;
+        }
         .message {
             padding: 10px;
             margin: 10px 0;
@@ -140,9 +152,9 @@
                     const flightDiv = document.createElement('div');
                     flightDiv.className = 'flight-item';
                     flightDiv.innerHTML = `
-                        <strong>${flight.origin} → ${flight.destination}</strong><br>
-                        Date: ${flight.departure_date}<br>
-                        Airline: ${flight.airline}<br>
+                        <strong>${flight.origin} → ${flight.destination}</strong>
+                        <div class="flight-detail">Date: ${flight.departure_date}</div>
+                        <div class="flight-detail">Airline: ${flight.airline}</div>
                         <button onclick="prepareBooking('${flight.flight_id}')">Book Flight</button>
                     `;
                     resultsDiv.appendChild(flightDiv);
